@@ -50,7 +50,7 @@ $ sudo npm install -g ionic cordova
 Start a project based on this template:
 
 ```bash
-$ ionic start myApp https://github.com/chris-newman/tidy-ionic-starter.git
+$ ionic start myApp https://github.com/chris-newman/tidy-ionic-starter
 ```
 
 Then, to run it, cd into `myApp` and run:
