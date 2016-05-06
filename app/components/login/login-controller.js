@@ -1,5 +1,5 @@
 //controller for login
-app.module('starter').controller("LoginController", function(){
+angular.module('starter').controller("LoginController", function(){
     
     
     

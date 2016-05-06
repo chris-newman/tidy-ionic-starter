@@ -53,8 +53,19 @@ Start a project based on this template:
 ```bash
 $ ionic start myApp https://github.com/chris-newman/tidy-ionic-starter
 ```
+### Up and running with your new project
 
-Then, to run it, cd into `myApp` and run:
+First things first, cd into `myApp`
+
+The Ionic framework always includes the most recent starter app.js in www/js/app.js
+
+Copy it into the new structure and remove it from the original location
+
+```bash
+$ cp -f www/js/app.js www/app/app.js && rm -r www/js
+```
+
+Then, to run it:
 
 ```bash
 $ ionic platform add ios 
