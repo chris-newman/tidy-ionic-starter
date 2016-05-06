@@ -1,7 +1,7 @@
-This template is based on the [blank](https://github.com/driftyco/ionic-starter-blank) starter template for the [Ionic Framework](http://ionicframework.com/).
+This template is based on the [blank](https://github.com/driftyco/ionic-starter-blank) starter template for the [Ionic Framework](http://ionicframework.com/). It comes with an example Login component and a route configured for it (most of my apps have needed Login screens).
 
 ## What it's for
-A starter template is what becomes the www directory within the Cordova project.
+From the Ionic [documentation](http://ionicframework.com/docs/cli/start.html): A starter template is what becomes the www directory within the Cordova project.
 This template is mainly used to save me the trouble of manually restructuring my Ionic projects.
 
 ## How it's different
@@ -11,24 +11,25 @@ Inspiration for the following structure came from [this article on scotch.io](ht
 
 ```bash
 www/
-    lib/                           -----installed bower dependencies will get put here
+    lib/                           -----any bower dependencies will get put here
     app/
-        directives/                -----reusable ui components
-            custom-directive/
         components/                -----screens in the app
             login/
                 login.controller.js
                 login.view.html
-            home/
-                home.controller.js
-                home.view.html
+        directives/                -----reusable ui components
+            custom-directive/
         services/                  -----factories and services
             getData.service.js
+        app-routes.js              -----route configuration js
         app.js                     -----app configuration js
-    css/                           -----css files organized by directive or view
+    assets/                        -----assets and other images besides icons and splash screens go here
+        img/                       
+        files/
+    css/                           -----css files organized by directive or view here, or in scss folder
+        components/ 
+            login.css
         directives/
-        components/
-    img/                           -----other images besides icons and splash screens go here
     index.html
 ```
 
