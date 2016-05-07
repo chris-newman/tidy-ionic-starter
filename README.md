@@ -1,4 +1,4 @@
-This template is based on the [blank](https://github.com/driftyco/ionic-starter-blank) starter template for the [Ionic Framework](http://ionicframework.com/). It comes with an example Login component and a route configured for it (most of my apps have needed Login screens).
+This template is based on the [blank](https://github.com/driftyco/ionic-starter-blank) starter template for the [Ionic Framework](http://ionicframework.com/). This template comes with an example Login component and a route configured for it (most of my projects have needed Login screens).
 
 ## What it's for
 From the Ionic [documentation](http://ionicframework.com/docs/cli/start.html): A starter template is what becomes the www directory within the Cordova project.
@@ -20,7 +20,7 @@ www/
         directives/                -----reusable ui components
             custom-directive/
         services/                  -----factories and services
-            getData.service.js
+            starter.service.js
         app-routes.js              -----route configuration js
         app.js                     -----app configuration js
     assets/                        -----assets and other images besides icons and splash screens go here
@@ -65,7 +65,13 @@ Copy it into the new structure and remove it from the original location
 $ cp -f www/js/app.js www/app/app.js && rm -r www/js
 ```
 
-Then, to run it:
+Then, a quick test in your browser to make sure everything is in order:
+
+```bash
+$ ionic serve
+```
+
+And to build and run on an emulator:
 
 ```bash
 $ ionic platform add ios 
