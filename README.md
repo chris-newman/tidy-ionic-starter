@@ -24,8 +24,8 @@ www/
         app-routes.js              -----route configuration js
         app.js                     -----app configuration js
     assets/                        -----assets and other images besides icons and splash screens go here
-        img/                       
-        files/
+        files/                       
+        img/
     css/                           -----css files organized by directive or view here, or in scss folder
         components/ 
             login.css
@@ -42,7 +42,7 @@ To use this, either create a new ionic project using the ionic node.js utility, 
 
 ### With the Ionic tool:
 
-If you don't have the Ionic CLI installed, get it with npm:
+If you don't have the Ionic CLI installed, get Ionic and Cordova with npm:
 
 ```bash
 $ sudo npm install -g ionic cordova
@@ -71,7 +71,15 @@ Then, a quick test in your browser to make sure everything is in order:
 $ ionic serve
 ```
 
-And to build and run on an emulator:
+But you might be saying to yourself, "Jeez Chris I don't like copy-pasting all these commands..."
+### BONUS: Setup in one command!
+
+Create your project, cd into it, copy in the new app.js, and ionic serve with this one command!
+```bash
+$ ionic start myApp https://github.com/chris-newman/tidy-ionic-starter && cd "!#:2" && cp -f www/js/app.js www/app/app.js && rm -r www/js && ionic serve
+```
+
+### Build and run on an emulator:
 
 ```bash
 $ ionic platform add ios 
