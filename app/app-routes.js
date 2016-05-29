@@ -10,7 +10,7 @@ angular.module('starter').config(function ($stateProvider, $urlRouterProvider) {
         /*
         .state('home', {
             url: '/home',
-            templateUrl: 'app/componenets/home/home.view.html',
+            templateUrl: 'app/components/home/home.view.html',
             controller: 'HomeController'
         })        
         */
